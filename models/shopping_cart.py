@@ -15,7 +15,6 @@ class ShoppingCart:
                 product.update_stock(product.stock - quantity)
                 self.save_to_db()
                 return
-        # Якщо продукту немає, додаємо новий
         self.__items.append({"product_id": product.product_id, "quantity": quantity})
         product.update_stock(product.stock - quantity)
         self.save_to_db()
