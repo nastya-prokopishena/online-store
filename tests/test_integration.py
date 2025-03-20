@@ -23,7 +23,7 @@ class TestIntegration(unittest.TestCase):
         user.cart.add_item(product1, 1)
         user.cart.add_item(product2, 2)
 
-        self.assertEqual(user.cart.get_total(), 60000)  
+        self.assertEqual(user.cart.get_total(), 60000)
 
         order = user.create_order()
         self.assertEqual(order.total_price, 60000)
