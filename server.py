@@ -43,7 +43,7 @@ def main():
     print(admin.register())
     print(admin.login("valeria.schvalinska@gmail.com", "admin123"))
 
-    product3 = Product(3, "Tablet", 15000, 8)
+    product3 = Product(3, "Monitor", 15000, 8)
     print(admin.add_product(product3))
 
     print(admin.remove_product(3))
